@@ -1,12 +1,15 @@
-import PostCard from "../../components/common/PostCard";
+import Header from "@/components/layout/Header";
 
-const PostsPage: React.FC = () => {
+const Posts: React.FC = () => {
   return (
-    <div className="p-8">
-      <h1 className="text-3xl font-semibold mb-4">Posts</h1>
-      <PostCard title="Sample Post" body="This is a placeholder post." />
+    <div>
+      <Header />
+      <main className="p-6">
+        <h1 className="text-3xl font-bold">Posts Page</h1>
+        <p className="mt-2">Here is where all posts will be listed.</p>
+      </main>
     </div>
   );
 };
 
-export default PostsPage;
+export default Posts;
